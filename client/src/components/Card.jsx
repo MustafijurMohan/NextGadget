@@ -47,7 +47,7 @@ const Card = ({ product }) => {
 
     return (
         <Reveal>
-          <div className="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition">
+          <div className="bg-white border border-gray-300 shadow-md rounded-lg overflow-hidden hover:shadow-lg transition">
             {/* Product Image */}
             <Link to={`/product/${product._id}`}>
               <div className="relative w-full flex items-center justify-center bg-gray-50">
