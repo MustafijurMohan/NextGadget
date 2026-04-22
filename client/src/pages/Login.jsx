@@ -155,8 +155,8 @@ const Login = () => {
                 onChange={(e) => setRememberMe(e.target.checked)}
                 className="h-4 w-4 text-gray-600 border-gray-300 rounded focus:ring-gray-500"
               />
-              <label htmlFor="remember" className="ml-2 block text-sm text-gray-700">
-                Remember me
+              <label htmlFor="remember" className="ml-1">
+                I agree to the <span className="underline cursor-pointer">Terms</span> and <span className="underline cursor-pointer">Privacy Policy</span>
               </label>
             </div>
             <Link to='/email-verify' className="text-blue-600 hover:underline">Forgot Your Password?</Link>

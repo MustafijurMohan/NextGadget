@@ -1,12 +1,12 @@
 require('dotenv').config();
 const app = require('./app');
-const hostname = '127.0.0.1'
-const port = process.env.PORT || 4000;
+const PORT = process.env.PORT || 4000;
+const HOSTNAME = '0.0.0.0'
 
 
 // Home Page Routes
 app.get('/', (req, res) => {
-    res.status(200).send('Hello Everyone. This is MERN Stack Ecommerce Project With Ostad Platform.')
+    res.status(200).send('Hello Everyone. This is MERN Stack Ecommerce Project With Ostad Platform. A Gadget seller webapp.')
 })
 
 // Undifined Routes
@@ -47,7 +47,7 @@ app.use((err, req, res, next) => {
     });
 });
 
-app.listen(port, hostname, () => {
-    console.log(`Server running Successfull at http://${hostname}:${port}`);
+app.listen(PORT, HOSTNAME, () => {
+    console.log(`Server running Successfull at http://${HOSTNAME}:${PORT}`);
 })
 

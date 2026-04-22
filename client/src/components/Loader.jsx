@@ -6,7 +6,7 @@ const Loader = () => {
   if (!loading) return null;
 
   return (
-    <div className="fixed inset-0 flex items-center justify-center bg-black/60 backdrop-blur-sm z-100">
+    <div className="fixed inset-0 flex items-center justify-center backdrop-blur-lg z-100">
       <div className="flex flex-col items-center space-y-6">
         {/* Spinning ring with gradient */}
         <div className="relative w-20 h-20">
