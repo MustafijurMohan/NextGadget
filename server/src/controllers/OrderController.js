@@ -133,7 +133,7 @@ exports.PlaceOrderStripe = async (req, res, next) => {
         // 3. Create order
         const data = await OrderModel.create(newOrder)
         // 4. Clear cart
-        // await CartModel.deleteMany({userID})
+        await CartModel.deleteMany({userID})
 
          // 5. Response
         return res.status(201).json({success: true, message: 'Stripe session created', sessionUrl: session.url, data: data})

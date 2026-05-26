@@ -11,17 +11,6 @@ const hpp = require('hpp');
 const xss = require('xss')
 const { connectDB } = require('./src/config/database');
 const { connectCloudinary } = require('./src/config/cloudinary');
-const { StripeWebhook } = require('./src/controllers/WebHookController');
-
-
-app.post(
-    '/api/v1/webhook/stripe',
-    express.raw({ type: 'application/json' }),  // raw body for Stripe
-    StripeWebhook
-);
-
-
-
 
 
 app.use((req, res, next) => {
