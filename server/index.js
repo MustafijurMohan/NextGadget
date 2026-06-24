@@ -6,7 +6,7 @@ const HOSTNAME = '0.0.0.0'
 
 // Home Page Routes
 app.get('/', (req, res) => {
-    res.status(200).send('Hello Everyone. This is MERN Stack Ecommerce Project With Ostad Platform. A Gadget seller webapp.')
+    res.status(200).send('Hello Everyone. This is MERN Stack Ecommerce Project. A Gadget seller webapp.')
 })
 
 // Undifined Routes

@@ -32,8 +32,23 @@ import EmailVerify from './pages/EmailVerify';
 import OtpVerify from './pages/OtpVerify';
 import ResetPassword from './pages/ResetPassword';
 import Reveal from './animation/Reveal';
+import { useEffect } from 'react';
 
 const App = () => {
+
+
+
+    // ✅ Show friendly message if backend is slow (Render cold start)
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      toast.info("Server is waking up, please wait a moment...", {
+        autoClose: 6000,
+        position: "bottom-right"
+      })
+    }, 4000) // shows after 4 seconds of waiting
+
+    return () => clearTimeout(timer)
+  }, [])
 
 
   return (
